@@ -17,7 +17,7 @@ public class Queue {
     {
         if (putLoc==q.length)
         {
-            System.out.println("Queue is full.");
+            System.out.println(" -Queue is full.");
             return;
         }
 
@@ -28,7 +28,7 @@ public class Queue {
     {
         if (getLoc==putLoc)
         {
-            System.out.println("Queue is empty.");
+            System.out.println(" -Queue is empty.");
             return (char) 0;
         }
 

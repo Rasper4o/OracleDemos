@@ -24,6 +24,25 @@ public class QDemo {
 
         System.out.println("\n");
 
+        System.out.println("Using smallQ to generate errors.");
+        for (i=0; i<5; i++)
+        {
+            System.out.print("Attempting to store " + (char) ('Z'-i));
+
+            smallQ.put((char) ('Z'-i));
+
+            System.out.println();
+        }
+
+        System.out.println();
+
+        System.out.print("Contents of smallQ: ");
+        for(i=0; i<5; i++)
+        {
+            ch=smallQ.get();
+
+            if(ch!=(char) 0) System.out.print(ch);
+        }
 
     }
 }
