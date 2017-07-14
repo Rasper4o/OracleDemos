@@ -9,8 +9,7 @@ public class Triangle extends TwoDShape {
 
     Triangle(String s, double w, double h)
     {
-        setHeight(h);
-        setWidth(w);
+        super(w, h);
 
         style=s;
     }
