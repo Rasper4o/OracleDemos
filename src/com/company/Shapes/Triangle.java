@@ -7,11 +7,24 @@ public class Triangle extends TwoDShape {
 
     private String style;
 
+    Triangle()
+    {
+        super();
+        style="none";
+    }
+
     Triangle(String s, double w, double h)
     {
         super(w, h);
 
         style=s;
+    }
+
+    Triangle(double num)
+    {
+        super(num);
+
+        style="filled";
     }
 
     double area()
