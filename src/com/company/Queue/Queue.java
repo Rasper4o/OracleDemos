@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Queue;
 
 /**
  * Created by Georgi on 13.7.2017 г..
