@@ -20,7 +20,11 @@ public class SyncThread implements Runnable {
 
         System.out.println(thread.getName() + " starting.");
 
-        answer=sumArrayObject.sumArray(a);
+        synchronized (sumArrayObject)
+        {
+            answer = sumArrayObject.sumArray(a);
+        }
+
         System.out.println("Sum for " + thread.getName() + " is " + answer);
 
         System.out.println(thread.getName() + " terminating.");
